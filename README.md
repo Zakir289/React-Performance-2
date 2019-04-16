@@ -3,11 +3,17 @@
   Please go through React Performance part 1 as well. 
  
 1.Should React Update The Component?
+
 2.Debounce Input Handlers
+
 3.Memoize React Components
+
 4.Avoid Async Initialization in componentWillMount()
+
 5.Using Optimizing tools like  why-did-you-update
+
 6.Beware of Object Literals in JSX
+
 7.Problems with mutating the state directly 
 ---
 ### 1.Should React Update The Component?
@@ -38,8 +44,11 @@ class MyComponent extends React.Component {
     …
 }
 ```
+
 It performs shallow comparison, So, It works perfectly with primitive data types, when coming to objects unless you avoid mutating the object, you can’t take full use of object. 
 This will cause the render() function to create a new function on every render. 
+
+
  ---
 ### 2. Debounce Input Handlers
 This concept is not specific to React, or any other front-end library.
